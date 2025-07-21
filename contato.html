@@ -7,34 +7,54 @@
     <meta name="author" content="Diego Cavalcanti">
     <meta name="keywords" content="HTML, CSS, JavaScript">
     <title>Meu Perfil</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-    <header>
+    	<!-- Cabeçalho da Página (header) -->
+		<header>
 
-        <div id="header_content">
+			<!-- Div Conteudo do Cabeçalho -->
+			<div id="header_content" class="flex">
 
-            <div id="titulo">
-                <h1>Diego Cavalcanti</h1>
-            </div>
+				<!-- Titulo do Cabeçalho -->
+				<div id="titulo">
 
-            <div id="menu">
-                <nav>
-                    <ul id="menu">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="contato.html">Contato</a></li>
-                        <li><a href="sobre.html">Sobre</a></li>
-                    </ul>   
-                </nav>
-            </div>
+					<!-- Seu nome -->
+					<h1>Diego Cavalcanti</h1>
 
-        </div>
+				</div>
 
-    </header>
+				<!-- Conteudo do Menu da Página (header) -->
+				<div id="menu">
+
+					<!-- Menu da Página -->
+					<nav>
+
+						<!-- Marcadores não ordenados + links -->
+						<ul id="menu">
+							<li>
+								<a href="index.html">Home</a>
+							</li>
+							<li>
+								<a href="contato.html">Contato</a>
+							</li>
+                            <li>
+								<a href="sobre.html">Sobre</a>
+							</li>
+						</ul>
+
+					</nav>
+
+				</div>
+
+			</div>
+
+		</header>
 
 
     <main>
 
-        <section id="contact">
+        <section id="contact" class="flex">
 
             <form action="#" method="submit" id="formulario">
                 <label for="name">Nome: </label>
@@ -55,7 +75,7 @@
                 <button type="submit">Enviar</button>
             </form>
 
-            <article id="mapa">
+            <article id="mapa" class="flex_start endereco">
                 <p>Av. Pedro Álvares Cabral, 1000</p>
                 <p>São Paulo - SP</p>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.512262239904!2d-46.66100952580514!3d-23.585954562494024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59f1069d11d1%3A0xcb936109af9ce541!2sParque%20Ibirapuera!5e0!3m2!1spt-BR!2sbr!4v1752793396440!5m2!1spt-BR!2sbr" 
@@ -67,17 +87,27 @@
     </main>
 
     
-    <footer>
+<!-- Rodapé da Página (footer) -->
+		<footer class="flex">
 
-        <section id="redes-sociais">
-            <a href="https://www.linkedin.com/in/diegoscavalcanti/"><img src="assets/img/linkedin.svg" alt="Linkedin"></a>
-            <a href="https://github.com/diegocavalcanti-dev"><img src="assets/img/github.svg" alt="Github"></a>
-            <a href="#"><img src="assets/img/instagram.svg" alt="Instagram"></a>
-        </section>
+			<!-- Seção de Contato - Redes Sociais-->
+			<section id="redes_sociais">
 
-        <h3>
-            Feito com ☕ por Diego Cavalcanti - 2025
-        </h3>
-    </footer>
+				<a href="">
+					<img src="assets/img/linkedin.svg" alt="LinkedIn" class="social_icon"/>
+				</a>
+				<a href="">
+					<img src="assets/img/github.svg" alt="Github" class="social_icon"/>
+				</a>
+				<a href="">
+					<img src="assets/img/instagram.svg" alt="Instagram" class="social_icon"/>
+				</a>
+
+			</section>
+
+			<h3>Feito com 🧡 por Generation Brasil - 2024</h3>
+
+		</footer>
+
 </body>
 </html>
