@@ -288,7 +288,6 @@ form button:hover {
         padding: 0.3rem;
     }
 
-    
     #about {
         width: 95%;
     }
@@ -297,9 +296,30 @@ form button:hover {
         text-align: center;
     }
 
+    .img_profile {
+        width: 30%;
+    }
+
+    p {
+        padding-top: 1;
+    }
+
+    .texto_sobre {
+        padding-top: 2rem;
+    }
+
     #conteudo {
         display: flex;
         flex-direction: column;
+        gap: 0;
+    }
+
+    #video h2 {
+        text-align: center;
+    }
+
+    #youtube iframe {
+        max-height: 220px;
     }
 
     #contact {
@@ -308,5 +328,26 @@ form button:hover {
         width: 100%;
         justify-content: center;
         align-content: center;
+        gap: 0;
+    }
+    form {
+        width: 95%;
+    }
+    #mapa {
+        width: auto;
+        margin-bottom: 2rem;
+        gap: 0;
+    }
+    .social_icon {
+        width: 3rem;
+        height: 3rem;
+    }
+    .flex {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .flex h3 {
+        font-size: 16px;
+        padding: 0.5rem 0 0;
     }
 }
