@@ -5,7 +5,7 @@
     box-sizing: border-box;
     outline: none;
     font-weight: 400;
-    font-family: sans-serif;
+    font-family: Poppins, sans-serif;
 }
 
 :root {
@@ -28,7 +28,7 @@ html {
 
 body {
     background-color: var(--gray-200);
-    color: var(--black-800);
+    /* color: var(--black-800); */
 }
 
 h1 {
@@ -72,8 +72,9 @@ p {
 
 /* Estilização para o Header, fazendo... */
 header {
-    background-color: var(--purple-800);
-    border-bottom: 1px solid var(--purple-500);
+    /* background-color: var(--purple-800);
+    border-bottom: 1px solid var(--purple-500); */
+    background: linear-gradient(to right, rgba(10, 76, 104, 0.7) 30%, rgba(11, 85, 42, 0.7) 70%);
 }
 
 #header_content {
@@ -100,7 +101,8 @@ header {
 }
 
 #menu li a:hover {
-    color: var(--purple-200);
+    color: var(--white);
+    font-weight: 500;
     text-decoration: underline;
 }
 
@@ -118,6 +120,7 @@ header {
 
 .img_profile {
     width: 200px;
+    border-radius: 50%;
 }
 
 /* estilizar o vídeo*/
@@ -138,7 +141,7 @@ footer {
     margin: 0;
     padding: 2rem;
     color: var(--white);
-    background-color: var(--purple-500);
+    background: linear-gradient(to right, rgba(10, 76, 104, 0.7) 30%, rgba(11, 85, 42, 0.7) 70%);
     font-weight: bold;
     text-align: center;
 }
@@ -159,8 +162,9 @@ footer {
 }
 
 .social_icon:hover {
-    filter: brightness(0) saturate(100%) invert(65%) sepia(59%) 
-    saturate(2437%) hue-rotate(213deg) brightness(86%) contrast(88%);
+    filter: brightness(10%) contrast(70%);
+    transform: scale(1.1);
+    transition: all 0.3s ease;
 }
 
 /* estilizando contato*/
@@ -208,16 +212,17 @@ form span {
 form button {
     text-align: center;
     padding: 0.75rem 2rem;
-    background: var(--purple-800);
+    background: linear-gradient(to right, rgba(10, 76, 104, 0.7) 30%, rgba(10, 76, 104, 0.7) 70%);
     color: var(--white);
-    border: 1px solid var(--purple-500);
+    border: 1px solid rgba(10, 76, 104, 0.7);
     border-radius: 0.75rem;
     font-weight: 700;
     font-size: 1rem;
 }
 
 form button:hover {
-    background-color: var(--purple-500);
+    background-color: rgba(26, 106, 141, 0.7);
+    cursor: pointer;
 }
 
 #mapa {
