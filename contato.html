@@ -59,29 +59,29 @@
 
         <section id="contact" class="flex">
 
-            <form action="#" method="submit" id="formulario">
+            <form action="#" method="post" id="formulario">
                 <label for="name">Nome: </label>
-                <input type="text" id="name" name="name" placeholder="Digite seu nome">
+                <input type="text" id="name" name="name" onkeyup="validaNome()" placeholder="Digite seu nome">
                 <span id="txtNome"></span>
 
                 <label for="email">Email: </label>
-                <input type="text" id="email" name="email" placeholder="Digite seu email">
+                <input type="text" id="email" name="email" onkeyup="validaEmail()" placeholder="Digite seu email">
                 <span id="txtEmail"></span>
 
                 <label for="subject">Assunto: </label>
-                <input type="text" id="subject" name="subject" placeholder="Digite o título da mensagem">
-                <span id="txtNome"></span>
+                <input type="text" id="subject" name="subject" onkeyup="validaAssunto()" placeholder="Digite o título da mensagem">
+                <span id="txtSubject"></span>
 
                 <label for="message">Mensagem: </label>
                 <textarea name="message" id="message" placeholder="Digite sua mensagem"></textarea>
 
-                <button type="submit">Enviar</button>
+                <button id="enviado" onclick="enviar()" type="submit">Enviar</button>
             </form>
 
             <article id="mapa" class="flex_start endereco">
                 <p>Av. Pedro Álvares Cabral, 1000</p>
                 <p>São Paulo - SP</p>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.512262239904!2d-46.66100952580514!3d-23.585954562494024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59f1069d11d1%3A0xcb936109af9ce541!2sParque%20Ibirapuera!5e0!3m2!1spt-BR!2sbr!4v1752793396440!5m2!1spt-BR!2sbr" 
+                <iframe id="mapaA" onmousemove="mapaZoom()" onmouseout="mapaNormal()" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.512262239904!2d-46.66100952580514!3d-23.585954562494024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59f1069d11d1%3A0xcb936109af9ce541!2sParque%20Ibirapuera!5e0!3m2!1spt-BR!2sbr!4v1752793396440!5m2!1spt-BR!2sbr" 
                 width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </article>
             
@@ -111,6 +111,6 @@
 			<h3>Feito com 🧡 por Generation Brasil - 2024</h3>
 
 		</footer>
-
+	<script src="assets/js/script.js"></script>
 </body>
 </html>
